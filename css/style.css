@@ -25,6 +25,19 @@ body {
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+} 
+.header img {
+    width: 60px;
+}
 a {
     color: inherit;
     text-decoration: none;
