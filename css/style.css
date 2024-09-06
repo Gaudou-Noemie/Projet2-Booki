@@ -40,6 +40,7 @@ body {
     display: flex;
     list-style-type: none;
     gap: 68px;
+    margin: 0px;
 } 
 .header li{
     padding: 1em;
@@ -143,20 +144,21 @@ input:focus {
 .filters-container{                                    /*container de filtre*/
     display:flex;
     justify-content: flex-start;
-    padding: 15px;
     flex-wrap: wrap;
+    padding-top: 25px;
 }
 .filters{                                                   /* mot filtres*/
     font-weight: bold;
-    padding: 10px;
-    position: relative;
-    right: 20px;
-    width: auto;  
+    margin: 10px;
+    margin-left: 2px;
+    padding-top: 3px;
+    padding-right: 8px;
+    
 }
 
 
 .button-filters1{                                       /*bouton 1 */
-    padding: 8px 19px 8px 19px;
+    padding: 10px 19px 10px 19px;
     border-radius: 25px;
     border: 2px solid var(--main-bg-color);
     background-color: transparent;
@@ -166,7 +168,7 @@ input:focus {
 }
 
 .button-filters2{                                     /* bouton 2 */
-    padding: 8px 19px 8px 19px;
+    padding: 10px 19px 10px 19px;
     border-radius: 25px;
     border: 2px solid var(--main-bg-color);
     background-color: transparent;
@@ -176,7 +178,7 @@ input:focus {
 }
 
 .button-filters3{                                      /* bouton 3*/
-    padding: 8px 19px 8px 19px;
+    padding: 10px 19px 10px 19px;
     border-radius: 25px;
     border: 2px solid var(--main-bg-color);
     background-color: transparent;
@@ -186,7 +188,7 @@ input:focus {
 }
 
 .button-filters4{                                        /* bouton 4*/
-    padding: 8px 19px 8px 19px;
+    padding: 10px 19px 10px 19px;
     border-radius: 25px;
     border: 2px solid var(--main-bg-color);
     background-color: transparent;
@@ -207,26 +209,46 @@ input:focus {
     background-color:var(--filter-bg-color);
 }
 
+.info-bar{
+    width: 440px;
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+
+.icon-i{
+    font-size:xx-small;
+    width: 8px;
+    border-radius: 30px;
+    padding: 4px 4px 4px 8px;
+    border: 1.8px solid var(--main-bg-color);
+    
+    }
+   
+
 
 
 @media (min-width:320px) and (max-width: 768px) {  /* position relative concernant le mobile*/
     .main-container{
-        padding-left: 8px;
-        padding-right: 8px;
+        
+        padding-left: 6px;
+        padding-right: 6px;
         
     }
     
     
     
     body{
-        width: 100%;
-        padding: none;
+         margin: 5px;
     }
     
     
     .header {
         display: flex;
         justify-content: center;
+        
        
         
 
@@ -234,15 +256,20 @@ input:focus {
     .header img{
         margin-top: 30px;
         position: relative;
-        left: 5px;
+        left: 4px;
         
         
+    }
+
+    .header nav {
+      position: relative;
+     
     }
     .header ul{
         display: flex;
         justify-content: center;
         margin: 0%;
-        padding: 0%;
+        padding:0%;
         border-bottom: 2px solid var(--main-bg-color);
         width: 100%;
     }
@@ -253,8 +280,10 @@ input:focus {
         border-top: none;
     }
     .search-container{
-        width: 100%;
-        align-items: flex-start;
+        width: 230px;
+        overflow: visible;
+        padding: 2px;
+       
     }
 
     #magnifying-glass {                                /* Affiche la loupe sur les écrans mobiles */
@@ -263,9 +292,12 @@ input:focus {
         justify-content: end;
         right: 32px;
         align-items: flex-start;
-        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        box-shadow:0px 0.1px 2.1px rgba(0, 0, 0, 0.027),0px 4px 4px 0px rgba(0, 0, 0, 0.31);
+  }
+  
+
                        
-    }
+    
     #magnifying-glass i{                              /* Taille de la loupe */
         font-size: 18px;
     }
@@ -276,15 +308,51 @@ input:focus {
     input {
         position:relative;                            /* Barre de recherche*/
         border-radius: 0px 15px 15px 0px;
-        margin-right: auto;
+        width: 230px;
+        
+        
     }
     .filters-container{                                 /*container de filtre */
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        padding: 7px;
+        flex-wrap: wrap;   
+        padding-top: 10px; 
+    }
+    .button-filters1{                                    /*effet bouton sur mobile*/
+        padding: 10px;
+        width: 138px;
+      
+    }
+
+    .button-filters2{                                     /*effet bouton sur mobile*/
+        width: 138px;
+       padding: 10px;
+       
+    }
+    .button-filters3{                                    /*effet bouton sur mobile*/
+        padding: 10px;
+        width: 138px;
+
+
+}
+    
+    .button-filters4{                                  /*effet bouton sur mobile*/
+        width: 138px;
+        padding: 10px;
         
     }
+    .info-bar{
+        margin: 8px;
+        font-size: small;
+        width: 280px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+.icon-i{
+    margin-right: 8px;
+}
+
 }
 
 
