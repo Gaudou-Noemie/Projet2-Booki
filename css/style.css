@@ -279,6 +279,9 @@ a {
 .hebergements {                                     /*zone hebergement*/
     width: 65%;
 }
+.hebergements .section-title{
+    padding: 10px;
+}
  
 .hebergements-cards{                                   /*contenaire de la carte d'hebergement*/
     display: flex;
@@ -288,8 +291,21 @@ a {
     align-items: flex-end;
     gap: 20px;
     margin: 5px;
-}
+    }
 
+    .hebergements-cards .card-subtitle{
+        margin: 3px;
+        padding-left: 4px;
+    }
+
+    .hebergements-cards .card-title{
+        margin: 3px;
+        padding-left: 4px;
+    }
+
+    .hebergements-cards .card-rating{
+        padding-left: 8px;
+    }
 .hebergements-cards a{                                  /*lien d'hebergement*/
     width: 30%;
 }
@@ -301,6 +317,8 @@ a {
     box-sizing: border-box;
     max-height: 260px;
     padding: 6px; 
+   
+    
 }
 
 .hebergements-cards .card-content{                       /*contenue de la carte*/
@@ -308,6 +326,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    
 }
 
 .hebergements-cards img{                                /*image de la carte */
