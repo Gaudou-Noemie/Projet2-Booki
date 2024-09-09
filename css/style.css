@@ -402,7 +402,7 @@ a {
 .activities-cards{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
 }
 
 .activities-cards .card{
@@ -419,7 +419,61 @@ a {
 .activities-cards .card-title{
     padding: 10px;
     margin: 0%;
+    font-size: small;
 }
+
+.activities-cards .card-content{
+    height: 50px;
+}
+
+/* Footer de la page*/
+
+.footer {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    margin-top: 40px;
+}
+
+.footer .footer-title{
+    font-size: small;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    gap: 10px;
+    
+}
+.footer li{
+    font-size: small;
+    
+}
+
+.footer .about{
+    padding: 4px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+.footer .accommodations{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.footer .assistance{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -627,5 +681,20 @@ a {
     .activities-cards a {
         width: 100%;
         
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        
+    }
+    .footer .about{
+       padding-bottom: 20px;
+    }
+
+    .footer .accommodations{
+        padding-left: 0%;
+        padding-bottom: 20px;
     }
 }
