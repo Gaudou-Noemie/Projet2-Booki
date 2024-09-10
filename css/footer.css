@@ -1,0 +1,46 @@
+
+.footer {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    margin-top: 40px;
+}
+
+.footer .footer-title{
+    font-size: small;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    gap: 10px;
+    
+}
+.footer li{
+    font-size: small;
+    
+}
+
+.footer .about{
+    padding: 4px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+.footer .accommodations{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.footer .assistance{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}

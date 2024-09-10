@@ -1,3 +1,7 @@
+@import "./header.css";
+@import "./footer.css";
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -26,35 +30,6 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.header ul {
-    display: flex;
-    list-style-type: none;
-    gap: 68px;
-    margin: 0px;
-} 
-.header li{
-    padding: 1em;
-    border: 2px solid transparent;
-}
-
-.header li:hover {
-    color:var(--main-color);
-    border-top: 2px solid var(--main-color)
-}
-
-.header img {
-    width: 60px;
-    gap: 10px;
 }
 
 h1{
@@ -431,60 +406,10 @@ a {
     height: 50px;
 }
 
-/* Footer de la page*/
-
-.footer {
-    display: flex;
-    margin: 0px;
-    padding: 10px;
-    background-color: var(--main-bg-color);
-    margin-top: 40px;
-}
-
-.footer .footer-title{
-    font-size: small;
-}
-
-.footer ul{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0%;
-    margin: 0%;
-    gap: 10px;
-    
-}
-.footer li{
-    font-size: small;
-    
-}
-
-.footer .about{
-    padding: 4px;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    
-}
-.footer .accommodations{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding-left: 30px;
-}
-
-.footer .assistance{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         
@@ -526,10 +451,7 @@ a {
     }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
+
 @media (min-width:320px) and (max-width: 768px) {  /* position relative concernant le mobile*/
    
     .main-container{
@@ -579,7 +501,7 @@ a {
 
         
     } 
-    .filters{                                             /*filtres*/
+    .filters{                                                  /*filtres*/
         font-weight: bold;       
         margin: 10px;
     }

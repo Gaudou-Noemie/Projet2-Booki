@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 68px;
+    margin: 0px;
+} 
+.header li{
+    padding: 1em;
+    border: 2px solid transparent;
+}
+
+.header li:hover {
+    color:var(--main-color);
+    border-top: 2px solid var(--main-color)
+}
+
+.header img {
+    width: 60px;
+    gap: 10px;
+}
