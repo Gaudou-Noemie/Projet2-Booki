@@ -1,3 +1,4 @@
+
 @import "./header.css";
 @import "./footer.css";
 
@@ -39,7 +40,7 @@ h1{
 h1 p {
     font-size: 16px;
 }
-
+ 
 .search-container {                                  /*container de recherche */
     display: flex;
     align-items: center;
@@ -406,7 +407,6 @@ a {
     height: 50px;
 }
 
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 
@@ -449,10 +449,16 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activities-cards a{
+        width: 30%;
+    }
+    .activities img{
+        max-height: 150px;
+    }
 }
 
 
-@media (min-width:320px) and (max-width: 768px) {  /* position relative concernant le mobile*/
+@media (min-width:320px) and (max-width: 767.5px) {  /* position relative concernant le mobile*/
    
     .main-container{
         box-sizing: unset;
